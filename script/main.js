@@ -165,3 +165,10 @@ function toogleClass() {
 /* ===============================
 Botón previsualizar
 ================================= */
+
+//papelera
+var nodes = document.querySelectorAll (".arrayformacion");
+var eliminarElemento = document.querySelectorAll(".papelera");
+var subirElemento = document.querySelectorAll (".flecha-arriba");
+var bajarElemento = document.querySelectorAll(".flecha-abajo");
+var padre = document.querySelector ("fieldset-information");
