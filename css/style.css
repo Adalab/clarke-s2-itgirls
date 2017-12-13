@@ -321,15 +321,16 @@ CV
   width:100%;
 }
 
-aside {
-
+.print-cv {
+  box-sizing: content-box;
   width: 595px;
   height: 842px;
-  display: flex;
-  font-size: 14px;
-  margin-left: auto;
+  display:flex;
+    margin-left: auto;
   margin-right: auto;
 }
+
+
 
 .list-none {
   list-style: none;
@@ -381,6 +382,7 @@ aside {
   }
 
   aside {
+
     padding-left: 40px;
     padding-top: 120px;
   }

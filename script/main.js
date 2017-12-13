@@ -154,6 +154,20 @@ FIN ACORDEON
 /* ===============================
 IMPRIMIR
 ================================= */
+var printButton = document.querySelector ('.buttonPrint');
+
+function imprimirCV () {
+  var divPrint = document.querySelector(".print-cv");
+  divPrint.style.display = "block";
+  var contenido = divPrint.innerHTML;
+  var contenidoOriginal = document.body.innerHTML;
+  document.body.innerHTML = contenido;
+  window.print ();
+  document.body.innerHTML = contenidoOriginal;
+}
+
+printButton.addEventListener ('click',imprimirCV);
+
 /* ===============================
 FIN IMPRIMIR
 ================================= */
